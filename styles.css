@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  width: 100%;
+}
+nav {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 4%;
+}
+
+.logo-god-war {
+  width: 200px;
+  z-index: 2;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.mascara {
+  display: flex;
+  filter: brightness(70%);
+}
+.fondo-main {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
+}
+
+.link-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 400px;
+  height: 30px;
+}
+
+.link-header a {
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: transform 0.3s, background-clip 0.5s;
+}
+
+.link-header a:hover {
+  transform: scale(1.1);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 74, 255, 1) 0%,
+    rgba(9, 45, 121, 1) 100%
+  );
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  
+}
+
+.button-main {
+  padding: 12px 20px;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 74, 255, 1) 0%,
+    rgba(9, 45, 121, 1) 100%
+  );
+  font-size: 18px;
+  border-radius: 30px;
+  cursor: pointer;
+  border: none;
+  text-transform: uppercase;
+  color: #fff;
+  transition: transform 0.3s, opacity 0.3s
+}
+
+.button-main:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
+.container-descriptions {
+  width: 38vw;
+  min-width: 600px;
+  color: #fff;
+  margin-left: 12%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 2;
+}
+
+.container-descriptions h2 {
+  font-size: 72px;
+  font-weight: 700;
+}
+.container-descriptions p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/*setion img*/
+
+.container-img {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+  height: 50vh;
+}
+
+.background2 {
+  width: 100%;
+  height: 50vh;
+  z-index: -2;
+  position: absolute;
+}
+
+.img-cap {
+  width: 300px;
+  height: 200px;
+  border-radius: 15px;
+  position: absolute;
+}
+
+.div-button {
+  width: 25%;
+  height: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.div-button button {
+  background-color: #fff;
+  z-index: 3;
+  width: 60px;
+  height: 30px;
+  border-radius: 30px;
+  border: none;
+  opacity: 0.6;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.div-button button:hover {
+  opacity: 0.9;
+  width: 70px;
+  height: 35px;
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.div-button:nth-of-type(1) button {
+  background-color: rgba(0, 0, 0, 0.63);
+  color: #fff;
+}
+
+.div-button:nth-of-type(1) button:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 74, 255, 1) 0%,
+    rgba(9, 45, 121, 1) 100%
+  );
+}
+.footer {
+  width: 100%;
+  height: 10vh;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 74, 255, 1) 0%,
+    rgba(9, 45, 121, 1) 100%
+  );
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding-left: 5%;
+  gap: 40%;
+  z-index: 3;
+}
+
+.footer img {
+  width: 30px;
+  height: 30px;
+}
+
+.footer h3 {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 400;
+  display: flex;
+  gap: 30px;
+}
